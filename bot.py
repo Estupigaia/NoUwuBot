@@ -19,5 +19,5 @@ myStreamListener = MyStreamListener()
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
 
 #filters the tweet stream with the string "uwu"
-uwuTweets= myStream.filter(track=['uwu'])
+myStream.filter(track=['uwu'])
 
